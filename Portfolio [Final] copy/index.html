@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Final Project</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/quiz.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <h1>Math Website</h1>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="effect1">
+                <h2 class="size">Arithmetic Sequences Calculator</h2>
+                <h5>t<sub>n</sub>= t<sub>1</sub> + (n - 1) d</h5>
+
+                <p>Insert t<sub>1</sub>:<input id="tm1" type="number"></p>
+                <p>Insert n:<input id="nvalue" type="number"></p>
+                <p>Insert d:<input id="diff" type="number"></p>
+
+                <button id="calc-btn">Calculate</button>
+
+                <h4>Answer</h4>
+                <p>t<sub>n</sub>:<span id="ans"></span></p>
+            </div>
+
+            <div class="effect2">
+                <h2 class="size">Geometric Sequences Calculator</h2>
+                <h5>t<sub>n</sub>= t<sub>1</sub>(r)<sup>n-1</sup></h5>
+
+                <p>Insert t<sub>1</sub>:<input id="geot1" type="number"></p>
+                <p>Insert r:<input id="rvalue" type="number"></p>
+                <p>Insert n:<input id="geonvalue" type="number"></p>
+
+                <button id="calc-tn">Calculate t<sub>n</sub></button>
+
+                <h4>Answer</h4>
+                <p>t<sub>n</sub>:<span id="geoanstn"></span></p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="effect card">
+                <h2>Date and Time</h2>
+                <p>Time - <span id="time"></span></p>
+                <p>Date - <span id="date"></span></p>
+            </div>
+
+            <div class="card trans">
+                <img src="img/Golden ratio Small.jpeg" id="image">
+                    <!-- <img src="img/Golden ratio Small.jpeg">
+                    <img src="img/Math 20-1 Small.jpeg">
+                    <img src="img/Math connect Small.jpeg">
+                    <img src="img/Math doodle Small.jpeg">
+                    <img src="img/Math pun Small.jpeg"> -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- Create a tooltip text -->
+            <p class="footere"><a href="contact.html" target="_blank">Contact</a><span class="tooltip">Contact info</span></p>
+            <p class="footere"><a href="about.html" target="_blank">About</a><span class="tooltip">Info about the website</span></p>
+            <p class="footere"><a href="help.html" target="_blank">Help</a><span class="tooltip">Help with the formulas</span></p>
+            <div class="mask2">
+                <div class="mask">
+                    <img src="img/flowers.webp" width="100px" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
